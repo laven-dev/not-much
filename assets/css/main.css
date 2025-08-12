@@ -162,7 +162,7 @@ kbd {
 
 .tags a:hover {
   background-color: var(--primary) !important;
-  color: #fff !important;
+  color: var(--selection-color) !important;
   text-decoration: none !important;
 }
 
