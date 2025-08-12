@@ -147,7 +147,7 @@ kbd {
   color: var(--secondary);
 }
 
-.post article a:not(.footnote-backref)::after {
+.post article a:not(.footnote-backref)::after, footer a::after {
   content: " ↗"
 }
 
