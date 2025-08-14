@@ -33,8 +33,9 @@ nav a:hover, a:hover {
 }
 
 a {
-  font-weight: 600;
   color: var(--primary-variant) !important;
+  text-decoration: underline !important;
+  text-underline-offset: 0.375em !important;
 }
 
 a:hover {
