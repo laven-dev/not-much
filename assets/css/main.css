@@ -167,6 +167,10 @@ kbd {
   color: #6c757d !important;
 }
 
+.tags a {
+  text-decoration: none !important;
+}
+
 .tags a:hover {
   background-color: var(--primary) !important;
   color: var(--selection-color) !important;
