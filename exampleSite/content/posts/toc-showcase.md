@@ -10,9 +10,10 @@ toc: true
 
 ## How not-much handle the ToC
 
-By default, Hugo supports the Table of Contents generation by setting the `toc` parameter to `true` or `false` in the page metadata. `not-much` theme is rendering the Table of Contents only on devices with a screen dimension ≥ 768px.
+By default, Hugo supports the Table of Contents generation by setting the `toc` parameter to `true` or `false` in the page metadata. `not-much` theme is rendering the Table of Contents in two different ways based on devices screens:
 
-If you are on medium/large device, you will find the ToC on the right side of the screen.
+- Screen dimension ≤ 768px: the Table of Contents is shown before the post content.
+- Screen dimension ≥ 768px: the Table of Contents is shown on the right side of the screen and follows the page scrolling.
 
 ### Nested Chapter
 
