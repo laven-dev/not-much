@@ -279,23 +279,8 @@ li > input[type=checkbox] {
 
 .toc {
   font-family: 'Red Hat Mono', serif !important;
-  margin-right: 1.5rem;
   opacity: 0.2;
-  /* Opacity Transition */
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -ms-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  /* Margin Transition */
-  -webkit-transition: margin 1s ease-in-out;
-  -moz-transition: margin 1s ease-in-out;
-  -ms-transition: margin 1s ease-in-out;
-  -o-transition: margin 1s ease-in-out;
-  transition: margin 1s ease-in-out;
-
   &:hover {
-    margin-right: 2.3rem;
     opacity: 1;
   }
 }
@@ -303,8 +288,27 @@ li > input[type=checkbox] {
 /* Viewport ≥ 768px: container = 720px */
 @media (min-width: 768px) {
   .toc {
-    display: block;
+    display: block !important;
+    position: fixed !important;
     right: calc(50% - 360px - 20px); /* 720px / 2 */
+    margin-right: 1.5rem;
+    /* Opacity Transition */
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    /* Margin Transition */
+    -webkit-transition: margin 1s ease-in-out;
+    -moz-transition: margin 1s ease-in-out;
+    -ms-transition: margin 1s ease-in-out;
+    -o-transition: margin 1s ease-in-out;
+    transition: margin 1s ease-in-out;
+
+    &:hover {
+      margin-right: 2.3rem;
+      opacity: 1;
+    }
   }
 }
 
