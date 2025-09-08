@@ -47,9 +47,9 @@ func main() {
 
 {{< youtube w7Ft2ymGmfc >}}
 
-## Tweet
+## Tweet (X)
 
-{{< tweet user="GoHugoIO" id="877500564405444608" >}}
+{{< x user="SanDiegoZoo" id="1453110110599868418" >}}
 
 ## Vimeo
 
