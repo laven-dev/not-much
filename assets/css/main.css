@@ -309,6 +309,18 @@ li > input[type=checkbox] {
   }
 }
 
+@media (max-width: 767px) {
+  .breadcrumb {
+    flex-direction: column !important;
+    --bs-breadcrumb-item-padding-x: 0rem !important;
+  }
+
+  .breadcrumb-item::before {
+    display: none !important;
+    
+  }
+}
+
 /* Viewport ≥ 992px: container = 960px */
 @media (min-width: 992px) {
   .toc {
