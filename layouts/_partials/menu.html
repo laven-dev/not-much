@@ -12,8 +12,8 @@ Renders a menu for the given menu ID.
 
 {{- with index site.Menus $menuID }}
   <nav aria-label="breadcrumb" class="small navbar navbar-expand-lg">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleMenu" aria-controls="collapsibleMenu" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler" style="--bs-navbar-toggler-border-color:rgba(0,0,0,0)" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleMenu" aria-controls="collapsibleMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="background-image: url(/pixelarticons--align-justify.svg)"></span>
     </button>
     <div class="collapse navbar-collapse mt-3 mt-md-0" id="collapsibleMenu">
       <ol class="breadcrumb fw-bold">

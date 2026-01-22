@@ -3,23 +3,23 @@
 # from a subdir of the theme
 themesDir = "../../"
 
-title = "not-much demo"
+title = "Lav's not-much Theme"
 theme = "not-much"
 languageCode = "en-us"
 baseURL = "https://example.org/"
-copyright = "Sample custom notice © {year}"
+copyright = "laven.dev © {year}"
 
 [markup]
   [markup.highlight]
-    style = 'dracula'
+    style = 'onedark'
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
 
 
 [params]
-theme = "auto"
-palette = "eink"
+theme = "dark"
+palette = "ayu"
 showThemeNotice = true
 showPostsSummary = true
 
@@ -57,16 +57,16 @@ lazyLoading = true
     url = "/about"
     weight = 2
   
-  [[menu.main]]
-    identifier = "tags"
-    name = "tags"
-    title = "tags"
-    url = "/tags"
-    weight = 4
+#  [[menu.main]]
+#    identifier = "tags"
+#    name = "tags"
+#    title = "tags"
+#    url = "/tags"
+#    weight = 4
 
   [[menu.main]]
     identifier = "github"
     name = "github"
-    title = "GitHub"
-    url = "https://github.com/imgios/not-much"
+    title = "Github"
+    url = "https://github.com/laven-dev"
     weight = 5

@@ -1,7 +1,5 @@
----
-lead: "Basic, simple and minimal Hugo theme"
----
+This is a modified version of the Hugo theme [not-much](https://themes.gohugo.io/themes/not-much/ "not-much") by [Giosuè Sulipano](https://giosuesulipano.it/).
 
-This is a demo of the `not-much` theme, built with Hugo, and is intended to be trouble-free. Explore it to see what `not-much` has to offer.
+This theme implements [notice shortcodes](https://github.com/gethugothemes/hugo-modules/tree/master/shortcodes/notice), the font [Hermit](https://pcaro.es/hermit/), the [Ayu Mirage](https://ayutheme.com/) colour scheme, and some minor tweaks here and there.
 
-💡 Check the [about page](./about) to learn more about this theme.
+For a more in depth demo site, check out the original ```not-much``` theme. Nearly everything here works the same.
