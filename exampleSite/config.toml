@@ -18,8 +18,8 @@ copyright = "laven.dev © {year}"
 
 
 [params]
-theme = "dark"
-palette = "ayu"
+theme = "auto"
+palette = "ayu-mirage"
 showThemeNotice = true
 showPostsSummary = true
 

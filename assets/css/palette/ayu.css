@@ -1,19 +1,19 @@
 :root {
-    --bg-color: #707A8C; /* Foreground */
-    --bg-variant: #e2e2da; 
-    --primary: #F28779; /* Red */
-    --primary-variant: #F27983;
-    --secondary: #63759926; /* Current Line */
+    --bg-color: #F8F9FA; /* Background */
+    --bg-variant: #56728F1F; /* Selection */
+    --primary: #F2AE49; /* Orange */
+    --primary-variant: #399EE6; /* Blue */
+    --secondary: #86B300; /* Green */
     --font-color: #212529; 
     --selection-color: black;
 }
 
 .dark {
-    --bg-color: #1F2430; /* Background */
-    --bg-variant: #409FFF40; /* Selection */
-    --primary: #FFAD66; /* Orange */
-    --primary-variant: #FFD173; /* Yellow */
-    --secondary: #D5FF80; /* Green */
+    --bg-color: #0B0E14; /* Background */
+    --bg-variant: #47526640; /* Selection */
+    --primary: #FFB454; /* Orange */
+    --primary-variant: #59C2FF; /* Blue */
+    --secondary: #AAD94C; /* Green */
     --font-color: #f3f3f3; 
     --selection-color: black;
 }

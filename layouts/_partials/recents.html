@@ -1,0 +1,15 @@
+<h2>Recent shenanigans</h2>
+<ul>
+    {{ range first 3 (where site.RegularPages "Type" "posts") }}
+    <div class="row">
+        <div class="col-auto">
+            <h5>» </h5>
+        </div>
+        <div class="col">
+            <h5><a href="{{ .Permalink }}">{{ .Title }}</a></h5>
+            <p class="small opacity-75 post-summary">{{ .Summary }}</p>
+            <br>
+        </div>
+    </div>
+    {{ end }}
+</ul>

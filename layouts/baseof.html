@@ -7,6 +7,9 @@
 {{- with .Site.Params.theme }}
   {{ $theme = . }}
 {{- end }}
+
+<link rel="stylesheet" href="/notice.css">
+
 <body
   {{- if eq $theme "dark" }}
     class="dark"
