@@ -11,12 +11,8 @@
                 <span class="underline">{{ .Params.lead }}</span>
             </p>
             {{ end }}
-            <p class="lh-lg">
-                {{ .Content }}
-            </p>
-            <p>
-                {{ partial "recents.html" }}
-            </p>
+            <p class="lh-lg">{{ .Content }}</p>
+            {{ partial "recents.html" }}
    <!-- </div> -->
     </div>
 </div>

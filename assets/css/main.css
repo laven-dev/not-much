@@ -1,5 +1,4 @@
 @import url(https://fonts.bunny.net/css?family=martian-mono:100,200,300,400,500,600,700,800);
-@import url(https://fonts.bunny.net/css?family=metamorphous:400);
 @import url(https://fonts.bunny.net/css?family=nova-square:400);
 
 @font-face {
@@ -146,32 +145,32 @@ kbd {
 }
 
 .post article h1::before {
-  content: "# ";
+  content: "/ ";
   color: var(--secondary);
 }
 
 .post article h2::before {
-  content: "## ";
+  content: "// ";
   color: var(--secondary);
 }
 
 .post article h3::before {
-  content: "### ";
+  content: "/// ";
   color: var(--secondary);
 }
 
 .post article h4::before {
-  content: "#### ";
+  content: "//// ";
   color: var(--secondary);
 }
 
 .post article h5::before {
-  content: "###### ";
+  content: "///// ";
   color: var(--secondary);
 }
 
 .post article h6::before {
-  content: "###### ";
+  content: "////// ";
   color: var(--secondary);
 }
 

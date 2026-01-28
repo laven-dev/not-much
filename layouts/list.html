@@ -4,7 +4,7 @@
   <div class="row mt-5 pt-5">{{ partial "menu.html" (dict "menuID" "main" "page" .) }}</div>
   {{ .Content }} 
   {{ if eq .Type "posts" }}
-    <h1>Shenanigans</h1>
+    <h1>Ramblings</h1>
   {{ end }}
   {{ $paginator := .Paginate (where .Data.Pages "Type" "posts") }} {{ range $paginator.Pages }}
   <div class="row mb-3">
