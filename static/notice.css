@@ -31,7 +31,7 @@
 .notice-head p {
   font-size: 1.25rem;
   font-weight: 600;
-  color: var(--font-color);
+  color: inherit !important;
   margin: 0;
   line-height: 1;
   transform: translateY(0.05em);
@@ -42,6 +42,7 @@
 }
 
 .notice-body p {
+  color: var(--font-color);
   margin: 0;
 }
 
@@ -108,8 +109,4 @@
 .notice.quote {
   color: var(--quote);
   background-color: rgba(145, 142, 145, 0.15);
-}
-
-.dark .notice-head p {
-  color: #d1d5db;
 }

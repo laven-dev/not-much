@@ -3,13 +3,11 @@ license = 'MIT'
 licenselink = 'https://github.com/imgios/not-much/blob/main/LICENSE'
 description = 'A modified version of the Hugo theme not-much'
 
-homepage = 'https://github.com/imgios/not-much'
-
-demosite = 'https://giosuesulipano.it/not-much/'
+homepage = 'https://github.com/laven-dev/not-much'
 
 tags = ['blog', 'website', 'simple', 'dark', 'minimal', 'responsive']
 
-features = ['blog', 'reponsive', 'theme-palettes']
+features = ['blog', 'reponsive', 'theme-palettes', 'notices']
 
 [author]
   name = 'laven-dev'

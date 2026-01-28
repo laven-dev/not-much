@@ -11,7 +11,7 @@ copyright = "laven.dev © {year}"
 
 [markup]
   [markup.highlight]
-    style = 'onedark'
+    style = 'nordic'
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
