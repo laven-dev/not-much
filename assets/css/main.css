@@ -1,6 +1,3 @@
-@import url(https://fonts.bunny.net/css?family=martian-mono:100,200,300,400,500,600,700,800);
-@import url(https://fonts.bunny.net/css?family=nova-square:400);
-
 @font-face {
   font-family: Hermit;
   font-style: normal;
@@ -13,12 +10,46 @@
   src: url("/fonts/Hermit-RegularItalic.woff2");
 }
 
+@font-face {
+  font-family: Intel One Mono;
+  font-style: normal;
+  src: url("/fonts/IntelOneMono-Regular.woff2");
+}
+
+@font-face {
+  font-family: Intel One Mono;
+  font-style: italic;
+  src: url("/fonts/IntelOneMono-Italic.woff2");
+}
+
+@font-face {
+  font-family: Intel One Mono;
+  font-style: normal;
+  font-weight: bold;
+  src: url("/fonts/IntelOneMono-Bold.woff2");
+}
+
+@font-face {
+  font-family: Intel One Mono;
+  font-style: italic;
+  font-weight: bold;
+  src: url("/fonts/IntelOneMono-BoldItalic.woff2");
+}
+
+svg.goat {
+  font-family: 'Hermit';
+}
+
 .chroma code, .chroma pre {
   font-size: 18px
 }
 
 .title-font {
-  font-family: 'Nova Square';
+  font-family: 'Intel One Mono';
+}
+
+.messageText, text.actor, text.actor-box, text.actor-man, .labelText, .loopText, .noteText {
+  font-family: 'Hermit' !important
 }
 
 body {
@@ -104,7 +135,7 @@ ul > li:has(input[type=checkbox]) {
 }
 
 code {
-  font-family: 'Martian Mono', serif !important;
+  font-family: 'Intel One Mono', serif !important;
 }
 
 code:not(.highlight *) {
@@ -129,7 +160,7 @@ mark {
 
 kbd {
   background-color: var(--bg-variant) !important;
-  font-family: 'Martian Mono', monospace !important;
+  font-family: 'Intel One Mono', monospace !important;
   font-weight: bold;
 }
 
@@ -139,7 +170,6 @@ kbd {
 .post article h4,
 .post article h5,
 .post article h6 {
-  font-size: 1.2rem;
   margin: 24px 0 10px 0;
   font-weight: bold;
 }
@@ -147,6 +177,21 @@ kbd {
 .post article h1::before {
   content: "/ ";
   color: var(--secondary);
+}
+
+.post article h1 {
+  color: #D09FFD;
+  font-size: 1.6rem;
+}
+
+.post article h2 {
+  color: #73D0FF;
+  font-size: 1.4rem;
+}
+
+.post article h3 {
+  color: #84CEB5;
+  font-size: 1.2rem;
 }
 
 .post article h2::before {
@@ -298,7 +343,7 @@ li > input[type=checkbox] {
 }
 
 .toc {
-  font-family: 'Martian Mono', serif !important;
+  font-family: 'Intel One Mono', serif !important;
 }
 
 /* Viewport ≥ 768px: container = 720px */
@@ -367,7 +412,7 @@ li > input[type=checkbox] {
 }
 
 .badge {
-  font-family: 'Martian Mono', serif !important;
+  font-family: 'Intel One Mono', serif !important;
   font-weight: 600 !important;
 }
 

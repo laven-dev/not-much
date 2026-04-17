@@ -1,5 +1,5 @@
 <h2>Recent ramblings</h2>
-<ul>
+<ul style="margin-bottom: 0;">
     {{ range first 3 (where site.RegularPages "Type" "posts") }}
     <div class="row">
         <div class="col-auto">
@@ -7,7 +7,7 @@
         </div>
         <div class="col">
             <h5><a href="{{ .Permalink }}">{{ .Title }}</a></h5>
-            <p class="small opacity-75 post-summary">{{ .Summary }}</p>
+            <p class="small opacity-75 post-summary"><i>{{ .Date | time.Format ":date_long" }}</i> <span style="color: #6c757d !important">//</span> {{ .Summary }}</p>
             <br>
         </div>
     </div>

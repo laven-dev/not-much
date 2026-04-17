@@ -39,5 +39,21 @@
     detectThemePreferences();
   </script>
   {{- end }}
+
+  {{ if .Store.Get "hasMermaid" }}
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: "dark",
+    });
+    mermaid.sequenceConfig = {
+      diagramMarginX: 0,
+      actorFontFamily: "Hermit",
+      noteFontFamily: "Hermit",
+      messageFontFamily: "Hermit",
+    }
+  </script>
+  {{ end }}
 </body>
 </html>

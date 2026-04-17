@@ -5,7 +5,14 @@
     <div class="row mt-5 pt-5">
    <!-- <div class="col-md-12"> -->
             {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
-            <h1 class="display-3 text-uppercase lh-sm title-font">{{ $title }}</h1>
+            <!-- <h1 class="display-3 text-uppercase lh-sm title-font">{{ $title }}</h1> -->
+            <h1 class="title-font display-3">
+            <span style="
+                background: linear-gradient(to right, #D09FFD, #73D0FF);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent; ">laven.dev</span>
+            </h1>
             {{ if isset .Params "lead" }}
             <p class="lead pb-2">
                 <span class="underline">{{ .Params.lead }}</span>
@@ -13,6 +20,7 @@
             {{ end }}
             <p class="lh-lg">{{ .Content }}</p>
             {{ partial "recents.html" }}
+            {{ partial "buttons.html" . }}
    <!-- </div> -->
     </div>
 </div>

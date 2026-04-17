@@ -1,0 +1,32 @@
+<div class="88x31" style="margin-bottom: 1rem;">
+<h4>The 88x31 Pile</h4>
+{{ range .Site.Data.buttons }}
+{{ if .link }}
+<a
+    href="{{ .link }}"
+    target="_blank">
+    <img
+        src="{{ .img }}"
+        alt="{{ .alt }}"
+        width="88" height="31"
+        style="
+            float: left;
+            image-rendering: auto;
+            image-rendering: crisp-edges;
+            image-rendering: pixelated;
+            image-rendering: -webkit-optimize-contrast;"></a>
+{{ else }}
+<img
+    src="{{ .img }}" 
+    alt="{{ .alt }}"
+    width="88"
+    height="31"
+    style="
+        float: left;
+        image-rendering: auto;
+        image-rendering: crisp-edges;
+        image-rendering: pixelated;
+        image-rendering: -webkit-optimize-contrast;">
+{{ end }}
+{{ end }}
+</div>

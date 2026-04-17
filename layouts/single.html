@@ -5,7 +5,11 @@
     </div>
     <div class="post">
       <header class="mb-4">
-        <h1 class="text-uppercase">{{ .Title }}</h1>
+        <h1 class="text-uppercase" style="
+                background: linear-gradient(to right, #F06B5C, #E6B752);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent; ">{{ .Title }}</h1>
         {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
         {{ $dateHuman := .Date | time.Format ":date_long" }}
         <div aria-label="breadcrumb">
@@ -23,9 +27,9 @@
               Updated: <time datetime="{{ $lastModMachine }}">{{ $lastModHuman }}</time>
             </li>
             {{ end }}
-<!--        <li class="breadcrumb-item small">
+       <li class="breadcrumb-item small">
               {{ printf "%d minutes" .ReadingTime }}
-            </li> -->
+            </li>
           </ol>
         </div>
       </header>
