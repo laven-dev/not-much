@@ -1,0 +1,44 @@
+{{ define "main" }}
+<div class="container pt-5">
+  <!-- <h1>{{ .Title }}</h1> -->
+  <div class="row mt-5 pt-5">{{ partial "menu.html" (dict "menuID" "main" "page" .) }}</div>
+  {{ .Content }} 
+  {{ if eq .Type "shorts" }}
+    <h1 style="
+                background: linear-gradient(to right, #F06B5C, #E6B752);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent; ">Ramblings</h1>
+  {{ end }}
+  {{ $paginator := .Paginate (where .Data.Pages "Type" "shorts") }} {{ range $paginator.Pages }}
+  <div class="row mb-3">
+    <div class="col-auto">
+      <h5>»</h5>
+    </div>
+    <div class="col">
+      <h2 class="h5 list-post-title">
+        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+      </h2>
+      <p class="small opacity-75 post-summary"><i>{{ .Date | time.Format ":date_long" }}</i>{{ if .Site.Params.showPostsSummary }} <span style="color: #6c757d !important">//</span> {{ .Summary }}{{ end }}</p>
+    </div>
+  </div>
+  {{ end }} {{ $paginator := .Paginator }} {{ if gt $paginator.TotalPages 1 }}
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      {{ if $paginator.HasPrev }}
+      <li class="breadcrumb-item">
+        <a href="{{ $paginator.Prev.URL }}">← back</a>
+      </li>
+      {{ end }} {{ if $paginator.HasNext }}
+      <li class="breadcrumb-item">
+        <a href="{{ $paginator.Next.URL }}">next →</a>
+      </li>
+      {{ end }}
+    </ol>
+  </nav>
+  {{ end }}
+</div>
+<footer>
+  {{ partial "footer.html" . }}
+</footer>
+{{ end }}
